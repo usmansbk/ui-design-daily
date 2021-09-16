@@ -1,7 +1,7 @@
+import Home from "./components/home";
+
 function App() {
-  return (
-    <h1>UI Design Daily</h1>
-  );
+  return <Home />;
 }
 
 export default App;

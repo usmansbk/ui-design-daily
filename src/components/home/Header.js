@@ -6,7 +6,17 @@ export default function Header() {
     <header className={classes.container}>
       <div className={classes.content}>
         <img src={logo} alt="" className={classes.logo} />
+        <Counter />
       </div>
     </header>
+  );
+}
+
+function Counter({ count = 0 }) {
+  return (
+    <div className={classes.counter}>
+      <p className={classes.counterLabel}>DAY</p>
+      <p className={classes.count}>{count}</p>
+    </div>
   );
 }

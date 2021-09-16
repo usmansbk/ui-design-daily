@@ -13,6 +13,20 @@
 
 .content {
   display: flex;
-  align-items: center;
   flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.count {
+  font-weight: 700;
+  font-size: 18px;
 }

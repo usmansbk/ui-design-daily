@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul {
@@ -18,4 +19,5 @@ a {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  color: #242e4c;
 }

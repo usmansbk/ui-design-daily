@@ -7,7 +7,7 @@ Trello is a collaborative work management app designed to track team projects, h
 ## Built With
 
 - React
-- Styled components
+- SASS
 
 ## Live Demo
 

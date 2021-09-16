@@ -9,3 +9,41 @@
   transform: scale(1.02);
   cursor: pointer;
 }
+
+.preview {
+  height: 315px;
+  border-radius: 5px 5px 0 0;
+  background-color: #bbb9d1;
+  width: 100%;
+}
+
+.thumbnail {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.details {
+  background-color: white;
+  padding: 20px 15px;
+  border-radius: 0 0 5px 5px;
+  margin-top: -5px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.date {
+  font-size: 14px;
+  opacity: 0.7;
+}

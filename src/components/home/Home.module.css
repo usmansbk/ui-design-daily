@@ -4,3 +4,12 @@
   flex-grow: 1;
   background-color: #fcfcff;
 }
+
+.grid {
+  max-width: 900px;
+  padding: 15px 25px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-flow: row dense;
+  grid-gap: 25px;
+}

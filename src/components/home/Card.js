@@ -11,7 +11,7 @@ export default function Card() {
         />
       </div>
       <div className={classes.details}>
-        <h4 className={classes.title}>Charts</h4>
+        <h4 className={classes.title}>Add Item Modal</h4>
         <p className={classes.date}>16 Sep 2021</p>
       </div>
     </div>

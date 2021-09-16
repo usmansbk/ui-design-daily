@@ -1,7 +1,12 @@
-export default function Header() {
-    return (
-        <header>
+import logo from "./logo.svg";
+import classes from "./Header.module.css";
 
-        </header>
-    )
+export default function Header() {
+  return (
+    <header className={classes.container}>
+      <div className={classes.content}>
+        <img src={logo} alt="" className={classes.logo} />
+      </div>
+    </header>
+  );
 }

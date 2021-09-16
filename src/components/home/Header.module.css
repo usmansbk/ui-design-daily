@@ -1,0 +1,18 @@
+.container {
+  height: 70px;
+  padding: 0 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
+  left: 0;
+  top: 0;
+  box-shadow: 0 10px 20px -7px rgba(160, 44, 219, 0.07);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}

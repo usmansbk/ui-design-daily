@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 60px 70px;
+  box-shadow: 0 50px 60px -25px rgba(77, 108, 203, 0.31);
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #0f1730;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+}
+
+.closeButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 30px;
+  width: 51px;
+  height: 51px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 31px;
+}
+
+.optionLabel {
+  font-size: 16px;
+  color: black;
+  line-height: 21px;
+}

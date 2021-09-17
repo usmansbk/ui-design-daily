@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import classes from "./Modal.module.css";
+import xmark from "./x-mark.svg";
 
 function RadioButton({ id, value, label }) {
   return (
@@ -37,11 +36,13 @@ function Button({ value, type = "button", mode = "flat" }) {
 export default function Modal() {
   return (
     <section className={classes.container}>
-      <button>
-        <FontAwesomeIcon icon={faTimes} />
+      <button className={classes.closeButton}>
+        <img src={xmark} alt="" className={classes.icon} />
       </button>
-      <h2>Add new item</h2>
-      <p>What kind of item would you like to add?</p>
+      <h2 className={classes.title}>Add new item</h2>
+      <p className={classes.optionLabel}>
+        What kind of item would you like to add?
+      </p>
       <div>
         <RadioButton id="service" value="Service" label="Service" />
         <RadioButton id="product" value="Product" label="Product" />

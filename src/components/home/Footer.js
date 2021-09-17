@@ -3,7 +3,7 @@ import classes from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer className={classes.container}>
-      <h1>Footer</h1>
+      <p className={classes.copyright}>&copy;UIDesignDaily</p>
     </footer>
   );
 }

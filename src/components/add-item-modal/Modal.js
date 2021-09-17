@@ -3,22 +3,19 @@ import { useState } from "react";
 import classes from "./Modal.module.css";
 import xmark from "./x-mark.svg";
 
-function Checkbox() {
-  const [checked, setChecked] = useState(false);
+function Checkbox({ checked }) {
   return (
-    <div
-      onClick={() => setChecked(!checked)}
-      className={clsx(classes.checkboxBorder, checked && classes.checked)}
-    >
+    <div className={clsx(classes.checkboxBorder, checked && classes.checked)}>
       <div className={classes.checkboxDot} />
     </div>
   );
 }
 
 function RadioButton({ id, value, label }) {
+  const [checked, setChecked] = useState(false);
   return (
-    <div className={classes.radio}>
-      <Checkbox />
+    <div onClick={() => setChecked(!checked)} className={classes.radio}>
+      <Checkbox checked={checked} />
       <label htmlFor={id} className={classes.radioLabel}>
         {label}
       </label>

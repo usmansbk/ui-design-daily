@@ -7,7 +7,7 @@ I plan on implementing every single design on UI Design Daily site
 ## Built With
 
 - React
-- SASS
+- CSS/SASS
 
 ## Live Demo
 

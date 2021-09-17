@@ -12,10 +12,9 @@ function Checkbox({ checked }) {
   );
 }
 
-function RadioButton({ id, value, label }) {
-  const [checked, setChecked] = useState(false);
+function RadioButton({ id, checked, value, onClick, label }) {
   return (
-    <div onClick={() => setChecked(!checked)} className={classes.radio}>
+    <div onClick={() => onClick(value)} className={classes.radio}>
       <Checkbox checked={checked} />
       <label htmlFor={id} className={classes.radioLabel}>
         {label}
@@ -61,6 +60,7 @@ function Button({ value, type = "button", contained }) {
 }
 
 export default function Modal() {
+  const [checked, setChecked] = useState(false);
   return (
     <section className={classes.container}>
       <Link to="/" className={classes.closeButton}>
@@ -71,8 +71,18 @@ export default function Modal() {
         What kind of item would you like to add?
       </p>
       <div className={classes.radioGroup}>
-        <RadioButton id="service" value="Service" label="Service" />
-        <RadioButton id="product" value="Product" label="Product" />
+        <RadioButton
+          value="Service"
+          label="Service"
+          onClick={setChecked}
+          checked={checked === "Service"}
+        />
+        <RadioButton
+          value="Product"
+          label="Product"
+          onClick={setChecked}
+          checked={checked === "Product"}
+        />
       </div>
       <TextInput
         id="name"

@@ -61,52 +61,56 @@ function Button({ value, type = "button", contained }) {
 export default function Modal({ visible, onDismiss }) {
   const [checked, setChecked] = useState(false);
   return (
-    <section className={clsx(classes.container, visible && classes.visible)}>
-      <button onClick={onDismiss} className={classes.closeButton}>
-        <img src={xmark} alt="" className={classes.icon} />
-      </button>
-      <h2 className={classes.title}>Add new item</h2>
-      <p className={classes.optionLabel}>
-        What kind of item would you like to add?
-      </p>
-      <div className={classes.radioGroup}>
-        <RadioButton
-          value="Service"
-          label="Service"
-          onClick={setChecked}
-          checked={checked === "Service"}
-        />
-        <RadioButton
-          value="Product"
-          label="Product"
-          onClick={setChecked}
-          checked={checked === "Product"}
-        />
+    <div className={classes.root}>
+      <div className={classes.modal}>
+        <section className={classes.container}>
+          <button onClick={onDismiss} className={classes.closeButton}>
+            <img src={xmark} alt="" className={classes.icon} />
+          </button>
+          <h2 className={classes.title}>Add new item</h2>
+          <p className={classes.optionLabel}>
+            What kind of item would you like to add?
+          </p>
+          <div className={classes.radioGroup}>
+            <RadioButton
+              value="Service"
+              label="Service"
+              onClick={setChecked}
+              checked={checked === "Service"}
+            />
+            <RadioButton
+              value="Product"
+              label="Product"
+              onClick={setChecked}
+              checked={checked === "Product"}
+            />
+          </div>
+          <TextInput
+            id="name"
+            label="Name"
+            placeholder="Eg. Business Consulting"
+            required
+          />
+          <TextInput
+            id="description"
+            label="Description"
+            placeholder="Describe your product"
+            multiline
+          />
+          <TextInput
+            id="price"
+            label="Price"
+            placeholder="Enter amount"
+            required
+            type="number"
+            min={0}
+          />
+          <div className={classes.buttonGroup}>
+            <Button value="Cancel" onClick={onDismiss} />
+            <Button value="Add item" contained />
+          </div>
+        </section>
       </div>
-      <TextInput
-        id="name"
-        label="Name"
-        placeholder="Eg. Business Consulting"
-        required
-      />
-      <TextInput
-        id="description"
-        label="Description"
-        placeholder="Describe your product"
-        multiline
-      />
-      <TextInput
-        id="price"
-        label="Price"
-        placeholder="Enter amount"
-        required
-        type="number"
-        min={0}
-      />
-      <div className={classes.buttonGroup}>
-        <Button value="Cancel" onClick={onDismiss} />
-        <Button value="Add item" contained />
-      </div>
-    </section>
+    </div>
   );
 }

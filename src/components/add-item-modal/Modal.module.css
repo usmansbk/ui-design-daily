@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+
+.root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  overflow: auto;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   background-color: white;
   border-radius: 20px;
   margin: 5%;
@@ -7,13 +26,7 @@
   box-shadow: 0 50px 60px -25px rgba(77, 108, 203, 0.31);
   font-family: "IBM Plex Sans", sans-serif;
   color: #0f1730;
-  position: relative;
   transition: transform 100ms ease-in;
-  transform: scale(0);
-}
-
-.visible {
-  transform: scale(1);
 }
 
 button {
@@ -153,6 +166,7 @@ button {
   line-height: 21px;
   opacity: 0.7;
   transition: opacity 300ms ease;
+  color: inherit;
 }
 
 .button:hover {

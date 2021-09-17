@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import classes from "./index.module.css";
 
 export default function AddItemModal() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
   const hideModal = () => setVisible(false);
   const showModal = () => setVisible(true);
 

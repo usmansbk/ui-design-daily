@@ -47,11 +47,12 @@ function TextInput({ id, required, label, multiline, ...rest }) {
   );
 }
 
-function Button({ value, type = "button", contained }) {
+function Button({ value, type = "button", contained, onClick }) {
   return (
     <button
       type={type}
       className={clsx(classes.button, contained && classes.contained)}
+      onClick={onClick}
     >
       {value}
     </button>
@@ -61,9 +62,11 @@ function Button({ value, type = "button", contained }) {
 export default function Modal({ visible, onDismiss }) {
   const [checked, setChecked] = useState(false);
   return (
-    <div className={classes.root}>
+    <div className={clsx(classes.root, visible && classes.visible)}>
       <div className={classes.modal}>
-        <section className={classes.container}>
+        <section
+          className={clsx(classes.container, visible && classes.visible)}
+        >
           <button onClick={onDismiss} className={classes.closeButton}>
             <img src={xmark} alt="" className={classes.icon} />
           </button>

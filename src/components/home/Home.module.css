@@ -3,6 +3,8 @@
   flex-direction: column;
   flex-grow: 1;
   background-color: #fcfcff;
+  color: #242e4c;
+  font-family: "Lato", sans-serif;
 }
 
 .body {

@@ -3,6 +3,7 @@ import Header from "./Header";
 import Card from "./Card";
 import Footer from "./Footer";
 import classes from "./Home.module.css";
+import day2Thumb from "../../screenshots/day-2.png";
 
 const cards = [
   {
@@ -14,7 +15,7 @@ const cards = [
   {
     title: "Chart",
     date: "17 Sep 2021",
-    src: "https://www.uidesigndaily.com/uploads/1444/day_1444_thumb.png",
+    src: day2Thumb,
     path: "/day-2",
   },
 ];

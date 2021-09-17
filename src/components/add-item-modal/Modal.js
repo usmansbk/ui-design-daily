@@ -60,9 +60,66 @@ function Button({ value, type = "button", contained, onClick }) {
   );
 }
 
-export default function Modal({ visible, onDismiss }) {
+function Form({ onCancel }) {
   const [checked, setChecked] = useState(false);
-  const transitions = {
+  return (
+    <>
+      <h2 className={classes.title}>Add new item</h2>
+      <p className={classes.optionLabel}>
+        What kind of item would you like to add?
+      </p>
+      <div className={classes.radioGroup}>
+        <RadioButton
+          value="Service"
+          label="Service"
+          onClick={setChecked}
+          checked={checked === "Service"}
+        />
+        <RadioButton
+          value="Product"
+          label="Product"
+          onClick={setChecked}
+          checked={checked === "Product"}
+        />
+      </div>
+      <TextInput
+        id="name"
+        label="Name"
+        placeholder="Eg. Business Consulting"
+        required
+      />
+      <TextInput
+        id="description"
+        label="Description"
+        placeholder="Describe your product"
+        multiline
+      />
+      <TextInput
+        id="price"
+        label="Price"
+        placeholder="Enter amount"
+        required
+        type="number"
+        min={0}
+      />
+      <div className={classes.buttonGroup}>
+        <Button value="Cancel" onClick={onCancel} />
+        <Button value="Add item" contained />
+      </div>
+    </>
+  );
+}
+
+function IconButton({ onClick, src }) {
+  return (
+    <button onClick={onClick} className={classes.closeButton}>
+      <img src={src} alt="" className={classes.icon} />
+    </button>
+  );
+}
+
+export default function Modal({ visible, onDismiss }) {
+  const modalTransitions = {
     entering: 0,
     entered: 1,
     exiting: 0,
@@ -94,54 +151,11 @@ export default function Modal({ visible, onDismiss }) {
             <section
               className={classes.container}
               style={{
-                transform: `scale(${transitions[state]})`,
+                transform: `scale(${modalTransitions[state]})`,
               }}
             >
-              <button onClick={onDismiss} className={classes.closeButton}>
-                <img src={xmark} alt="" className={classes.icon} />
-              </button>
-              <h2 className={classes.title}>Add new item</h2>
-              <p className={classes.optionLabel}>
-                What kind of item would you like to add?
-              </p>
-              <div className={classes.radioGroup}>
-                <RadioButton
-                  value="Service"
-                  label="Service"
-                  onClick={setChecked}
-                  checked={checked === "Service"}
-                />
-                <RadioButton
-                  value="Product"
-                  label="Product"
-                  onClick={setChecked}
-                  checked={checked === "Product"}
-                />
-              </div>
-              <TextInput
-                id="name"
-                label="Name"
-                placeholder="Eg. Business Consulting"
-                required
-              />
-              <TextInput
-                id="description"
-                label="Description"
-                placeholder="Describe your product"
-                multiline
-              />
-              <TextInput
-                id="price"
-                label="Price"
-                placeholder="Enter amount"
-                required
-                type="number"
-                min={0}
-              />
-              <div className={classes.buttonGroup}>
-                <Button value="Cancel" onClick={onDismiss} />
-                <Button value="Add item" contained />
-              </div>
+              <IconButton onClick={onDismiss} src={xmark} />
+              <Form onCancel={onDismiss} />
             </section>
           </div>
         </div>

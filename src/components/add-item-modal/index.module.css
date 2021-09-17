@@ -5,3 +5,28 @@
   justify-content: center;
   align-items: center;
 }
+
+button {
+  height: 51px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #0f1730;
+  opacity: 1;
+  color: white;
+  transition: opacity 300ms ease;
+  width: fit-content;
+  padding: 16px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.9;
+}

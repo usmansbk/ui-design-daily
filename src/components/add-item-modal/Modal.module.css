@@ -8,6 +8,12 @@
   font-family: "IBM Plex Sans", sans-serif;
   color: #0f1730;
   position: relative;
+  transition: transform 100ms ease-in;
+  transform: scale(0);
+}
+
+.visible {
+  transform: scale(1);
 }
 
 button {

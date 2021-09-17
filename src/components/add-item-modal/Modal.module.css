@@ -39,6 +39,26 @@ button {
 
 .optionLabel {
   font-size: 16px;
+  font-weight: 500;
   color: black;
   line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 61px;
+  margin-bottom: 40px;
+}
+
+.radio {
+  display: flex;
+  gap: 10px;
+}
+
+.radioLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #555b6d;
 }

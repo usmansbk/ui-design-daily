@@ -3,9 +3,16 @@ import xmark from "./x-mark.svg";
 
 function RadioButton({ id, value, label }) {
   return (
-    <div>
-      <input type="radio" id={id} value={value} />
-      <label htmlFor={id}>{label}</label>
+    <div className={classes.radio}>
+      <input
+        type="radio"
+        id={id}
+        value={value}
+        className={classes.radioInput}
+      />
+      <label htmlFor={id} className={classes.radioLabel}>
+        {label}
+      </label>
     </div>
   );
 }
@@ -43,7 +50,7 @@ export default function Modal() {
       <p className={classes.optionLabel}>
         What kind of item would you like to add?
       </p>
-      <div>
+      <div className={classes.radioGroup}>
         <RadioButton id="service" value="Service" label="Service" />
         <RadioButton id="product" value="Product" label="Product" />
       </div>

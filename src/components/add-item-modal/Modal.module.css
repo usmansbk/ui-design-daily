@@ -28,6 +28,7 @@ button {
   background: none;
   border: none;
   border-radius: 5px;
+  transition: background 300ms ease-in-out;
 }
 
 .closeButton:hover {
@@ -89,6 +90,11 @@ button {
   font-family: inherit;
   color: inherit;
   margin-bottom: 25px;
+  transition: border 300ms ease-in-out;
+}
+
+.input:focus {
+  border-color: #0f1730;
 }
 
 .input::placeholder {
@@ -106,6 +112,15 @@ button {
   font-size: 16px;
   line-height: 21px;
   opacity: 0.7;
+  transition: opacity 300ms ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.9;
 }
 
 .buttonGroup {

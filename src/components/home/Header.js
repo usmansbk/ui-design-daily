@@ -2,16 +2,14 @@ import { Link } from "react-router-dom";
 import logo from "./logo.svg";
 import classes from "./Header.module.css";
 
-const DAY = 1;
-
-export default function Header() {
+export default function Header({ day }) {
   return (
     <header className={classes.container}>
       <div className={classes.content}>
         <Link to="/">
           <img src={logo} alt="" className={classes.logo} />
         </Link>
-        <Counter count={DAY} />
+        <Counter count={day} />
       </div>
     </header>
   );

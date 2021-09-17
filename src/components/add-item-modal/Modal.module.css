@@ -61,6 +61,8 @@ button {
   display: flex;
   gap: 10px;
   align-items: center;
+  user-select: none;
+  cursor: pointer;
 }
 
 .radioLabel {
@@ -78,7 +80,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: border 200ms ease-in;
+  transition: border 100ms ease-in;
 }
 
 .checked {
@@ -91,7 +93,7 @@ button {
   height: 18px;
   background-color: #555b6d;
   border-radius: 50%;
-  transition: transform 200ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 }
 
 .checked .checkboxDot {

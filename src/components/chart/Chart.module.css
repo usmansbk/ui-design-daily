@@ -47,6 +47,7 @@
 .statHeader {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .statText {
@@ -59,4 +60,24 @@
 
 .statCount {
   font-weight: bold;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+}
+
+.current {
+  border-radius: 14px;
+  width: 40%;
+  height: 10px;
+  position: absolute;
+}
+
+.expected {
+  position: absolute;
+  height: 10px;
+  border-radius: 14px;
+  background-color: #f7f8fb;
+  width: 100%;
 }

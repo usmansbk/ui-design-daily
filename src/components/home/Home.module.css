@@ -3,7 +3,6 @@
   flex-direction: column;
   flex-grow: 1;
   background-color: #fcfcff;
-  padding-top: 70px;
 }
 
 .body {
@@ -11,6 +10,7 @@
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
+  margin-top: 70px;
   margin-bottom: 48px;
 }
 

@@ -2,7 +2,7 @@
 
 ![screenshot](./app_screenshot.png)
 
-Trello is a collaborative work management app designed to track team projects, highlight tasks underway, show who they are assigned to, and detail progress towards completion.
+I plan on implementing every single design on UI Design Daily site
 
 ## Built With
 
@@ -11,7 +11,7 @@ Trello is a collaborative work management app designed to track team projects, h
 
 ## Live Demo
 
-[Live Demo Link](https://not-live/)
+[Live Demo Link](https://ui-design-daily.netlify.app//)
 
 ## Getting Started
 
@@ -72,4 +72,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- UI Design Daily
+- [UI Design Daily](https://www.uidesigndaily.com/)

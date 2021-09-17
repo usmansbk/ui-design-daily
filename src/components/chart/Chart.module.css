@@ -4,10 +4,11 @@
   background-color: white;
   box-shadow: 0 34px 48px -12px rgba(3, 17, 64, 0.12);
   border-radius: 20px;
-  padding: 60px;
+  padding: 24px;
   font-family: "IBM Plex Sans", sans-serif;
   color: #0f1730;
   width: 615px;
+  margin: 24px;
 }
 
 .header {
@@ -80,4 +81,10 @@
   border-radius: 14px;
   background-color: #f7f8fb;
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 60px;
+  }
 }

@@ -69,9 +69,9 @@
 
 .current {
   border-radius: 14px;
-  width: 40%;
   height: 10px;
   position: absolute;
+  transition: width 200ms ease-in-out;
 }
 
 .expected {

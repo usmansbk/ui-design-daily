@@ -2,6 +2,7 @@
 .container {
   background-color: white;
   border-radius: 20px;
+  margin: 5%;
   padding: 60px 70px;
   box-shadow: 0 50px 60px -25px rgba(77, 108, 203, 0.31);
   font-family: "IBM Plex Sans", sans-serif;
@@ -61,4 +62,32 @@ button {
   font-size: 16px;
   line-height: 21px;
   color: #555b6d;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 5px 0;
+}
+
+.input {
+  padding: 15px 20px;
+  border: 1px solid #cfd4e2;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  color: inherit;
+  margin-bottom: 25px;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 21px;
 }

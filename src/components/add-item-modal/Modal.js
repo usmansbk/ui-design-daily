@@ -19,14 +19,24 @@ function RadioButton({ id, value, label }) {
 
 function TextInput({ id, required, label, multiline, ...rest }) {
   return (
-    <div>
-      <label htmlFor={id}>
+    <div className={classes.inputContainer}>
+      <label htmlFor={id} className={classes.inputLabel}>
         {label} {required && "*"}
       </label>
       {multiline ? (
-        <textarea id={id} required={required} {...rest}></textarea>
+        <textarea
+          className={classes.input}
+          id={id}
+          required={required}
+          {...rest}
+        ></textarea>
       ) : (
-        <input id={id} required={required} {...rest} />
+        <input
+          className={classes.input}
+          id={id}
+          required={required}
+          {...rest}
+        />
       )}
     </div>
   );

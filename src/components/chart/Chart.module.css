@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+
+.container {
+  background-color: white;
+  box-shadow: 0 34px 48px -12px rgba(3, 17, 64, 0.12);
+  border-radius: 20px;
+  padding: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #0f1730;
+  width: 615px;
+  margin: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.dropdown {
+  font-family: "IBM Plex Sans", sans-serif;
+  border: none;
+  background: none;
+  padding: 7px 10px;
+  border: 1px solid #cfd4e2;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #0f1730;
+  opacity: 0.7;
+  min-width: 120px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.statText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: black;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.statCount {
+  font-weight: bold;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+}
+
+.current {
+  border-radius: 14px;
+  height: 10px;
+  position: absolute;
+  transition: width 200ms ease-in-out;
+}
+
+.expected {
+  position: absolute;
+  height: 10px;
+  border-radius: 14px;
+  background-color: #f7f8fb;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 60px;
+  }
+}

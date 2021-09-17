@@ -1,19 +1,15 @@
 import classes from "./Card.module.css";
 
-export default function Card() {
+export default function Card({ title, date, src }) {
   return (
     <div className={classes.container}>
       <div className={classes.preview}>
-        <img
-          src="https://www.uidesigndaily.com/uploads/1443/day_1443_thumb.png"
-          alt=""
-          className={classes.thumbnail}
-        />
+        <img src={src} alt="" className={classes.thumbnail} />
       </div>
       <div className={classes.details}>
         <div>
-          <h4 className={classes.title}>Add Item Modal</h4>
-          <p className={classes.date}>16 Sep 2021</p>
+          <h4 className={classes.title}>{title}</h4>
+          <p className={classes.date}>{date}</p>
         </div>
         <button className={classes.button}>View</button>
       </div>

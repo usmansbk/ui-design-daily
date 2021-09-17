@@ -17,3 +17,8 @@
 .copyright {
   color: #bbb9d1;
 }
+
+.nav {
+  display: flex;
+  gap: 21px;
+}

@@ -11,7 +11,11 @@
 }
 
 button {
+  font-family: "IBM Plex Sans", sans-serif;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .closeButton {
@@ -90,4 +94,27 @@ button {
 .input::placeholder {
   font-size: 16px;
   line-height: 21px;
+}
+
+.button {
+  height: 51px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  opacity: 0.7;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 17px;
+}
+
+.contained {
+  background-color: #0f1730;
+  opacity: 1;
+  color: white;
 }

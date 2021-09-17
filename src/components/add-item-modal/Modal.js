@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import classes from "./Modal.module.css";
 import xmark from "./x-mark.svg";
 
@@ -42,9 +43,12 @@ function TextInput({ id, required, label, multiline, ...rest }) {
   );
 }
 
-function Button({ value, type = "button", mode = "flat" }) {
+function Button({ value, type = "button", contained }) {
   return (
-    <button mode={mode} type={type}>
+    <button
+      type={type}
+      className={clsx(classes.button, contained && classes.contained)}
+    >
       {value}
     </button>
   );
@@ -84,9 +88,9 @@ export default function Modal() {
         type="number"
         min={0}
       />
-      <div>
+      <div className={classes.buttonGroup}>
         <Button value="Cancel" />
-        <Button value="Add item" mode="contained" />
+        <Button value="Add item" contained />
       </div>
     </section>
   );

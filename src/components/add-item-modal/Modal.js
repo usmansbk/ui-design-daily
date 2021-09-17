@@ -1,16 +1,24 @@
 import clsx from "clsx";
+import { useState } from "react";
 import classes from "./Modal.module.css";
 import xmark from "./x-mark.svg";
+
+function Checkbox() {
+  const [checked, setChecked] = useState(false);
+  return (
+    <div
+      onClick={() => setChecked(!checked)}
+      className={clsx(classes.checkboxBorder, checked && classes.checked)}
+    >
+      <div className={classes.checkboxDot} />
+    </div>
+  );
+}
 
 function RadioButton({ id, value, label }) {
   return (
     <div className={classes.radio}>
-      <input
-        type="radio"
-        id={id}
-        value={value}
-        className={classes.radioInput}
-      />
+      <Checkbox />
       <label htmlFor={id} className={classes.radioLabel}>
         {label}
       </label>

@@ -60,6 +60,7 @@ button {
 .radio {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .radioLabel {
@@ -67,6 +68,34 @@ button {
   font-size: 16px;
   line-height: 21px;
   color: #555b6d;
+}
+
+.checkboxBorder {
+  border: 1px solid #cfd4e2;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 200ms ease-in;
+}
+
+.checked {
+  border-color: #555b6d;
+}
+
+.checkboxDot {
+  transform: scale(0);
+  width: 18px;
+  height: 18px;
+  background-color: #555b6d;
+  border-radius: 50%;
+  transition: transform 200ms ease-in-out;
+}
+
+.checked .checkboxDot {
+  transform: scale(1);
 }
 
 .inputContainer {

@@ -4,7 +4,14 @@
   flex-grow: 1;
   background-color: #fcfcff;
   padding-top: 70px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .grid {

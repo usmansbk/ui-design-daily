@@ -3,7 +3,8 @@
   flex-direction: column;
   flex-grow: 1;
   background-color: #fcfcff;
-  padding-top: 70px;
+  color: #242e4c;
+  font-family: "Lato", sans-serif;
 }
 
 .body {
@@ -11,6 +12,7 @@
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
+  margin-top: 70px;
   margin-bottom: 48px;
 }
 

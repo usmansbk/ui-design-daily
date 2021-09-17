@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap");
+.container {
+  background-color: white;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 24px;
+  box-shadow: 0 50px 60px -25px rgba(77, 108, 203, 0.31);
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #0f1730;
+  position: relative;
+}
+
+button {
+  font-family: "IBM Plex Sans", sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 12px;
+  width: 51px;
+  height: 51px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.closeButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 31px;
+}
+
+.optionLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 61px;
+  margin-bottom: 40px;
+}
+
+.radio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.radioLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #555b6d;
+}
+
+.checkboxBorder {
+  border: 1px solid #cfd4e2;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 100ms ease-in;
+}
+
+.checked {
+  border-color: #555b6d;
+}
+
+.checkboxDot {
+  transform: scale(0);
+  width: 18px;
+  height: 18px;
+  background-color: #555b6d;
+  border-radius: 50%;
+  transition: transform 100ms ease-in-out;
+}
+
+.checked .checkboxDot {
+  transform: scale(1);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 5px 0;
+}
+
+.input {
+  padding: 15px 20px;
+  border: 1px solid #cfd4e2;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  color: inherit;
+  margin-bottom: 25px;
+  transition: border 300ms ease-in-out;
+}
+
+.input:focus {
+  border-color: #0f1730;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.button {
+  height: 51px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  opacity: 0.7;
+  transition: opacity 300ms ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.9;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 17px;
+}
+
+.contained {
+  background-color: #0f1730;
+  opacity: 1;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 60px 70px;
+  }
+
+  .closeButton {
+    margin: 30px;
+  }
+}

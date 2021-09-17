@@ -29,6 +29,9 @@ button {
   border: none;
   border-radius: 5px;
   transition: background-color 300ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .closeButton:hover {

@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import classes from "./Modal.module.css";
 import xmark from "./x-mark.svg";
 
@@ -62,9 +63,9 @@ function Button({ value, type = "button", contained }) {
 export default function Modal() {
   return (
     <section className={classes.container}>
-      <button className={classes.closeButton}>
+      <Link to="/" className={classes.closeButton}>
         <img src={xmark} alt="" className={classes.icon} />
-      </button>
+      </Link>
       <h2 className={classes.title}>Add new item</h2>
       <p className={classes.optionLabel}>
         What kind of item would you like to add?

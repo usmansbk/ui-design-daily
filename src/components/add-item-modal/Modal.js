@@ -64,9 +64,7 @@ export default function Modal({ visible, onDismiss }) {
   return (
     <div className={clsx(classes.root, visible && classes.visible)}>
       <div className={classes.modal}>
-        <section
-          className={clsx(classes.container, visible && classes.visible)}
-        >
+        <section className={classes.container}>
           <button onClick={onDismiss} className={classes.closeButton}>
             <img src={xmark} alt="" className={classes.icon} />
           </button>

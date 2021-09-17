@@ -9,6 +9,7 @@
   justify-content: center;
   overflow: auto;
   transform: scale(0);
+  transition: transform 100ms ease-in-out;
 }
 
 .modal {
@@ -27,8 +28,6 @@
   box-shadow: 0 50px 60px -25px rgba(77, 108, 203, 0.31);
   font-family: "IBM Plex Sans", sans-serif;
   color: #0f1730;
-  transform: scale(0);
-  transition: transform 100ms ease-in-out;
 }
 
 .visible {

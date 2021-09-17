@@ -9,13 +9,13 @@ const cards = [
     title: "Add Item Modal",
     date: "16 Sep 2021",
     src: "https://www.uidesigndaily.com/uploads/1443/day_1443_thumb.png",
-    path: "/add-item-modal",
+    path: "/day-1",
   },
   {
     title: "Chart",
     date: "17 Sep 2021",
     src: "https://www.uidesigndaily.com/uploads/1444/day_1444_thumb.png",
-    path: "/simple-chart",
+    path: "/day-2",
   },
 ];
 

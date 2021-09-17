@@ -3,15 +3,14 @@
   width: 100%;
   border-top: 1px solid #ebebf2;
   font-size: 12px;
-  padding: 0 25px;
+  padding: 15px 25px;
   background-color: white;
-  position: fixed;
-  z-index: 3;
-  bottom: 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: #7d7a93;
+  gap: 20px;
 }
 
 .copyright {
@@ -21,4 +20,14 @@
 .nav {
   display: flex;
   gap: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 0 25px;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+  }
 }

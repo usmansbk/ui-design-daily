@@ -1,0 +1,25 @@
+.container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 100px 110px;
+  max-width: 1024px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 62px;
+  color: #151a46;
+  max-width: 707px;
+  margin-bottom: 25px;
+}
+
+.description {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  color: black;
+  max-width: 611px;
+  margin-bottom: 50px;
+}

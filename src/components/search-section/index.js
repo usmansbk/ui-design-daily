@@ -1,5 +1,10 @@
+import Search from "./Search";
 import classes from "./index.module.css";
 
 export default function SearchSection() {
-  return <section className={classes.container}></section>;
+  return (
+    <div className={classes.container}>
+      <Search />
+    </div>
+  );
 }

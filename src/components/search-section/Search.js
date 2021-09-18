@@ -1,10 +1,18 @@
 import classes from "./Search.module.css";
+import icon from "./icon.svg";
 
 function Input() {
   return (
-    <div>
-      <input type="search" placeholder="Search all templates" />
-      <button>Search</button>
+    <div className={classes.inputContainer}>
+      <input
+        type="search"
+        placeholder="Search all templates"
+        className={classes.input}
+      />
+      <button className={classes.button}>
+        <img src={icon} alt="" />
+        Search
+      </button>
     </div>
   );
 }

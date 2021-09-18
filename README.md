@@ -2,8 +2,6 @@
 
 ![screenshot](./app_screenshot.png)
 
-I plan on implementing every single design on UI Design Daily website to improve my React skills.
-
 ## Built With
 
 - React

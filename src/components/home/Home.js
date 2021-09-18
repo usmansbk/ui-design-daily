@@ -18,6 +18,12 @@ const cards = [
     src: day2Thumb,
     path: "/day-2",
   },
+  {
+    title: "Search Section",
+    date: "18 Sep 2021",
+    src: "https://www.uidesigndaily.com/uploads/1439/day_1439_thumb.png",
+    path: "/day-3",
+  },
 ];
 
 export default function Home() {

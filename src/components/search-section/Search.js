@@ -67,16 +67,19 @@ function Suggestions() {
 
 export default function Search() {
   return (
-    <section className={classes.container}>
-      <h2 className={classes.title}>
-        Free and Pro website templates for your business
-      </h2>
-      <p className={classes.description}>
-        Choose from over 300 fully responsive portfolio, blog and ecommerce
-        templates.
-      </p>
-      <Input />
-      <Suggestions />
-    </section>
+    <div className={classes.root}>
+      <div className={classes.underlay} />
+      <section className={classes.container}>
+        <h2 className={classes.title}>
+          Free and Pro website templates for your business
+        </h2>
+        <p className={classes.description}>
+          Choose from over 300 fully responsive portfolio, blog and ecommerce
+          templates.
+        </p>
+        <Input />
+        <Suggestions />
+      </section>
+    </div>
   );
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
 .container {
   display: flex;
   flex-grow: 1;
@@ -5,4 +7,5 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(119.36deg, #f0faff 0%, #d9ddff 100%);
+  font-family: "Merriweather", serif;
 }

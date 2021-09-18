@@ -1,6 +1,7 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/home";
 import Charts from "./components/chart";
+import SearchSection from "./components/search-section";
 import AddItemModal from "./components/add-item-modal";
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
         </Route>
         <Route path="/day-2">
           <Charts />
+        </Route>
+        <Route path="/day-3">
+          <SearchSection />
         </Route>
         <Route exact path="/">
           <Home />

@@ -3,13 +3,15 @@ import Header from "./Header";
 import Card from "./Card";
 import Footer from "./Footer";
 import classes from "./Home.module.css";
-import day2Thumb from "../../screenshots/day-2.png";
+import day1Thumb from "../../screenshots/day_1.png";
+import day2Thumb from "../../screenshots/day_2.png";
+import day3Thumb from "../../screenshots/day_3.png";
 
 const cards = [
   {
     title: "Add Item Modal",
     date: "16 Sep 2021",
-    src: "https://www.uidesigndaily.com/uploads/1443/day_1443_thumb.png",
+    src: day1Thumb,
     path: "/day-1",
   },
   {
@@ -21,7 +23,7 @@ const cards = [
   {
     title: "Search Section",
     date: "18 Sep 2021",
-    src: "https://www.uidesigndaily.com/uploads/1439/day_1439_thumb.png",
+    src: day3Thumb,
     path: "/day-3",
   },
 ];

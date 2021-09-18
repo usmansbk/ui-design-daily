@@ -10,7 +10,7 @@ function Input() {
         className={classes.input}
       />
       <button className={classes.button}>
-        <img src={icon} alt="" />
+        <img src={icon} alt="" className={classes.icon} />
         Search
       </button>
     </div>
